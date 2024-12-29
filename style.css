@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  background-color: #001f3f;
+  color: white;
+}
+
+#game-container {
+  position: relative;
+  width: 800px;
+  height: 400px;
+  border: 2px solid #fff;
+  margin: 20px 0;
+  background-color: #003366;
+  overflow: hidden;
+}
+
+#submarine {
+  position: absolute; /* Ensure positioning works with translate */
+  width: 40px;
+  height: 20px;
+  background-color: yellow;
+  border-radius: 5px;
+
+}
+
+#submarine-circle {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid blue;
+  pointer-events: none; /* Prevent the circle from blocking interactions */
+  transform: translate(-50%, -50%); /* Centers the circle around the submarine */
+}
+
+
+#obstacle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: red;
+  border-radius: 50%;
+  top: 50%;
+  left: 700px;
+  transform: translateY(-50%);
+}
+
+#controls {
+  margin: 20px 0;
+}
+
+input {
+  width: 60px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#message {
+  margin-top: 10px;
+  font-size: 18px;
+}
